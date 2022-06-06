@@ -13,8 +13,13 @@ cd fonts
 ./install.sh
 ```
 4. Flycut - менеджер буфера обмена
-5. Rectangle - оконный менеджер 
-6. VSCode
+5. Rectangle - оконный менеджер
+```
+brew install pyenv
+pyenv install 3.10.1
+pyenv global 3.10.1
+```
+7. VSCode
 
 
 # VSCode
