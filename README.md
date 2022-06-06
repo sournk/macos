@@ -13,6 +13,7 @@ cd fonts
 ./install.sh
 ```
 4. Flycut - менеджер буфера обмена
+5. VSCode
 
 
 # VSCode
