@@ -14,6 +14,7 @@ cd fonts
 ```
 4. Flycut - менеджер буфера обмена
 5. Rectangle - оконный менеджер
+6. pyenv
 ```
 brew install pyenv
 pyenv install 3.10.1
