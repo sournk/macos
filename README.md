@@ -1,7 +1,7 @@
 # Мой рецепт настройки MacOs
 1. iTerm2
 2. brew
-3. oh-my-zsh
+3. oh-my-zsh https://niklan.net/blog/149
 ```
   - Установить плагины plugins=(git sudo)
   - Установить тему ZSH_THEME="agnoster"
