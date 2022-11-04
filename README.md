@@ -14,13 +14,14 @@ cd fonts
 ```
 4. Flycut - менеджер буфера обмена
 5. Rectangle - оконный менеджер
-6. pyenv
+6. Shottr замена встроенному скиншоттеру и легковесный аналог крутому SnagIt.
+7. pyenv
 ```
 brew install pyenv
 pyenv install 3.10.1
 pyenv global 3.10.1
 ```
-7. VSCode
+8. VSCode
 
 
 # VSCode
