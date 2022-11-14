@@ -18,8 +18,12 @@ cd fonts
 6. BarTender - musthave для настройки MenuBar.
 6. Hidden Bar (BarTender заменил ее полностью) - Добавляет разделитель в MenuBar, исконки в MenuBar за которым будут автоматически прятаться.
 6. xbar - с помощью плагинов можно выводить что угодно в MenuBar. Мои плагины:
-  - 001-weather.15m.py - текущая года
-  - Active WiFi Name
+  - 001-weather.15m.py - текущая погода
+  - 001-wifiname.sh - Active WiFi Name. Изменил вывод только первых 4-х букв имени сети, чтобы занимать меньше места
+  - check_internet.5s.sh - Ping Latancy. Изменить вывод, чтобы занимать меньше места
+  - pomodaro.1s.sh
+   
+  
 7. pyenv
 ```
 brew install pyenv
