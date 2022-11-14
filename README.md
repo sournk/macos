@@ -15,6 +15,11 @@ cd fonts
 4. Flycut - менеджер буфера обмена
 5. Rectangle - оконный менеджер
 6. Shottr замена встроенному скиншоттеру и легковесный аналог крутому SnagIt.
+6. BarTender - musthave для настройки MenuBar.
+6. Hidden Bar (BarTender заменил ее полностью) - Добавляет разделитель в MenuBar, исконки в MenuBar за которым будут автоматически прятаться.
+6. xbar - с помощью плагинов можно выводить что угодно в MenuBar. Мои плагины:
+  - 001-weather.15m.py - текущая года
+  - Active WiFi Name
 7. pyenv
 ```
 brew install pyenv
