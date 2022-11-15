@@ -34,3 +34,6 @@ pyenv global 3.10.1
 
 
 # VSCode
+
+1. flake8
+1. REST Client
