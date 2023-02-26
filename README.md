@@ -12,6 +12,14 @@ git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
 ```
+4. KeyBindings.
+  1. Karabiner - мощная программа переназначения клавиш. Использовал для внешней клавиатуры MIIW, чтобы работал Enter на цифровой части аналогично основному.
+  2. Чтобы переназначить TouchID PowerButton на delete_forward выполни в терминале команду ниже. Она перебиндит TouchID=0xC00000040 на delete_forward=0x70000004C. ВНИМАНИЕ: Символы использовать нельзя - падает GUI!   
+```
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0xC00000040, "HIDKeyboardModifierMappingDst":0x70000004C}]}'
+```
+  Подробнее: https://github.com/pqrs-org/Karabiner-Elements/issues/2805#issuecomment-1403223711
+  Еще таблица кодов клавиш, хотя их можно в Karabiner-EventViewer посмотреть тоже. Главное добавить префикс 0x7: https://rakhesh.com/mac/using-hidutil-to-map-macos-keyboard-keys/ 
 4. Flycut - менеджер буфера обмена
 5. Rectangle - оконный менеджер
 6. Shottr замена встроенному скиншоттеру и легковесный аналог крутому SnagIt.
