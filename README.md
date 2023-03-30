@@ -20,11 +20,14 @@ cd fonts
 	```
 	Подробнее: https://github.com/pqrs-org/Karabiner-Elements/issues/2805#issuecomment-1403223711
 	Еще таблица кодов клавиш, хотя их можно в Karabiner-EventViewer посмотреть тоже. Главное добавить префикс 0x7: https://rakhesh.com/mac/using-hidutil-to-map-macos-keyboard-keys/ 
+5. Мышь и трекпад. 
+    1. Настройка "Реверсивная прокрутка" связана в MacOs для мыши и трекпада. Нельзя для одного установить реверс, а для другого нет. Чтобы отвязать эти настройки используй **[Scroll Reverser](https://pilotmoon.com/scrollreverser/)**. 
+    2. Плавность прокрутки в MacOs в разных программах разная. Например, в Chrome она плавнее, чем в VSCode. Для более точной настройки плавности - **[Mos](https://mos.caldis.me/)**.
 5. Flycut - менеджер буфера обмена
 6. Rectangle - оконный менеджер
 7. Shottr замена встроенному скиншоттеру и легковесный аналог крутому SnagIt.
 8. BarTender - musthave для настройки MenuBar.
-9. Hidden Bar (BarTender заменил ее полностью) - Добавляет разделитель в MenuBar, исконки в MenuBar за которым будут автоматически прятаться.
+9. Hidden Bar (BarTender заменил ее полностью) - Добавляет разделитель в MenuBar, иконки в MenuBar за которым будут автоматически прятаться.
 10. xbar - с помощью плагинов можно выводить что угодно в MenuBar. Мои плагины:
   - 001-weather.15m.py - текущая погода
   - 001-wifiname.sh - Active WiFi Name. Изменил вывод только первых 4-х букв имени сети, чтобы занимать меньше места
