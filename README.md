@@ -20,11 +20,39 @@ cd fonts
 	```
 	Подробнее: https://github.com/pqrs-org/Karabiner-Elements/issues/2805#issuecomment-1403223711
 	Еще таблица кодов клавиш, хотя их можно в Karabiner-EventViewer посмотреть тоже. Главное добавить префикс 0x7: https://rakhesh.com/mac/using-hidutil-to-map-macos-keyboard-keys/ 
-  3. **Для полноразмерной клавиатуры (у меня MIIW) заставить работать Home и End как на PC.** 
-    - Зайди в Karabiner-Elements Settings в раздел Complex Modifications.
-    - Нажми Add Rule.
-    - Нажми Import more rules from Internet.
-    - Дальше выбирай варианты модификации для клавиш Home и End. Я выбирал модификацию от Panic Nova.
+  3. **Для полноразмерной клавиатуры (у меня MIIW)**:
+    3.1. Заставить работать Home и End как на PC
+      - Зайди в Karabiner-Elements Settings в раздел Complex Modifications.
+      - Нажми Add Rule.
+      - Нажми Import more rules from Internet.
+      - Дальше выбирай варианты модификации для клавиш Home и End. Я выбирал модификацию от Panic Nova.
+    3.2. Переназначить Pause на CMD+§, которую использую на встроенной в MacBook клавиатуре как Punto Switcher hotkey: 
+      - В файл ``` ~/.config/karabiner/karabiner.json``` добавить следующий блок в список ```rules```:
+        ```
+        {
+          "description": "DK: Remap Pause to CMD+§ (which I use as Punto Switcher hotkey)",
+          "manipulators": [
+              {
+                  "from": {
+                      "key_code": "pause",
+                      "modifiers": {
+                          "optional": [
+                              "any"
+                          ]
+                      }
+                  },
+                  "to": [
+                      {
+                          "key_code": "non_us_backslash",
+                          "modifiers": "command"
+                      }
+                  ],
+                  "type": "basic"
+              }                            
+          ]
+        },      
+        ```
+    3.3. Заставить работать Enter доп. цифровой клавиатуры вместо символа =. Для этого в Karabiner в Simple Modifications добавить правило: ```Keypad keys/keypad_equal_sign -> Controls and symbols/return_or_enter```
 5. Мышь и трекпад. 
     1. Настройка "Реверсивная прокрутка" связана в MacOs для мыши и трекпада. Нельзя для одного установить реверс, а для другого нет. Чтобы отвязать эти настройки используй **[Scroll Reverser](https://pilotmoon.com/scrollreverser/)**. 
     2. Плавность прокрутки в MacOs в разных программах разная. Например, в Chrome она плавнее, чем в VSCode. Для более точной настройки плавности - **[Mos](https://mos.caldis.me/)**.
