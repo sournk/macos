@@ -52,6 +52,7 @@ cd fonts
           ]
         },      
         ```
+        - Или импортировать его с оф. сайта [Karabiner-Elements complex_modifications rules](https://ke-complex-modifications.pqrs.org/#dk_pause_to_cmd-non_us_backslash). Мой Pull Request в репозиторий кастомных правил [GitHub](https://github.com/pqrs-org/KE-complex_modifications/pull/1392).
     3.3. Заставить работать Enter доп. цифровой клавиатуры вместо символа =. Для этого в Karabiner в Simple Modifications добавить правило: ```Keypad keys/keypad_equal_sign -> Controls and symbols/return_or_enter```
 5. Мышь и трекпад. 
     1. Настройка "Реверсивная прокрутка" связана в MacOs для мыши и трекпада. Нельзя для одного установить реверс, а для другого нет. Чтобы отвязать эти настройки используй **[Scroll Reverser](https://pilotmoon.com/scrollreverser/)**. 
