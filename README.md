@@ -85,6 +85,7 @@
   - 001-wifiname.sh - Active WiFi Name. Изменил вывод только первых 4-х букв имени сети, чтобы занимать меньше места
   - check_internet.5s.sh - Ping Latancy. Изменить вывод, чтобы занимать меньше места
   - pomodaro.1s.sh
+11. SymbolicLinker - GUI to create symbolic links
    
   
 11. pyenv
