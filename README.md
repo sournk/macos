@@ -28,12 +28,21 @@
           - https://github.com/pqrs-org/Karabiner-Elements/issues/2805#issuecomment-1403223711_
 	      - Еще таблица кодов клавиш, хотя их можно в Karabiner-EventViewer посмотреть тоже. Главное добавить префикс 0x7: https://rakhesh.com/mac/using-hidutil-to-map-macos-keyboard-keys/ 
     3. **Для полноразмерной клавиатуры (у меня MIIW)**
-        1. Заставить работать Home и End как на PC:
-            - Зайди в Karabiner-Elements Settings в раздел Complex Modifications.
-            - Нажми Add Rule.
-            - Нажми Import more rules from Internet.
-            - Дальше выбирай варианты модификации для клавиш Home и End. Я выбирал модификацию от Panic Nova.
-      
+        1. Заставить работать Home и End как на PC [решение с apple.com](https://discussions.apple.com/thread/251108215?login=true)
+        ```
+        mkdir -p $HOME/Library/KeyBindings
+        echo '{
+        /* Remap Home / End keys to be correct */
+        "\UF729" = "moveToBeginningOfLine:"; /* Home */
+        "\UF72B" = "moveToEndOfLine:"; /* End */
+        "$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+        "$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+        "^\UF729" = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+        "^\UF72B" = "moveToEndOfDocument:"; /* Ctrl + End */
+        "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+        "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
+        }' > $HOME/Library/KeyBindings/DefaultKeyBinding.dict
+        ```
         2. Переназначить Pause на CMD+§, которую использую на встроенной в MacBook клавиатуре как Punto Switcher hotkey: 
             - В файл `~/.config/karabiner/karabiner.json` добавить следующий блок в список `rules`:
               ```
