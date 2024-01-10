@@ -18,7 +18,15 @@
     - gping
     - ncftp
 
-4. KeyBindings.
+5. Сглаживание шрифтов для внешних мониторов с невысоким разрешением менее 4K.
+    - Max `defaults -currentHost write -globalDomain AppleFontSmoothing -int 3`
+    - Mean `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
+    - Min `defaults -currentHost write -globalDomain AppleFontSmoothing -int 1`
+    - Удалить из системы кастомные настройки сглаживания `defaults -currentHost delete -globalDomain AppleFontSmoothing`
+    - Отключить системное сглаживание шрифтов `defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES`
+    - Включить системное сглаживание шрифтов `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
+
+5. KeyBindings.
 	1. **Karabiner** - мощная программа переназначения клавиш. Использовал для внешней клавиатуры MIIW, чтобы работал Enter на цифровой части аналогично основному.
 	2. Чтобы переназначить **TouchID PowerButton** на delete_forward выполни в терминале команду ниже. Она перебиндит TouchID=0xC00000040 на delete_forward=0x70000004C. **ВНИМАНИЕ: Символы использовать нельзя - падает GUI!**   
         ```
