@@ -18,6 +18,10 @@
     - gping
     - ncftp
 
+4. Doc
+    - Отключить прыгающие иконки в доке.
+    `defaults write com.apple.dock no-bouncing -bool TRUE && killall Dock`
+
 5. Сглаживание шрифтов для внешних мониторов с невысоким разрешением менее 4K.
     - Max `defaults -currentHost write -globalDomain AppleFontSmoothing -int 3`
     - Mean `defaults -currentHost write -globalDomain AppleFontSmoothing -int 2`
