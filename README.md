@@ -98,6 +98,7 @@
   - check_internet.5s.sh - Ping Latancy. Изменить вывод, чтобы занимать меньше места
   - pomodaro.1s.sh
 11. SymbolicLinker - GUI to create symbolic links
+11. [DockLock Lite](https://apps.apple.com/tr/app/docklock-lite/id6741814079?mt=12) - to lock Dock moving between displays
    
   
 11. pyenv

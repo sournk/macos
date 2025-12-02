@@ -16,7 +16,7 @@ from urllib.error import URLError
 from random import randint
 import datetime
 
-location_name = 'Kyrenia,CY'
+location_name = 'Belgrade, RS'
 api_key = '8b4824b451d5db1612156837df880f55'
 units = 'metric'  # kelvin, metric, imperial
 lang = 'en'
